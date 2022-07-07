@@ -1,0 +1,138 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+
+
+h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+input{
+    border: 1px solid hsl(223, 59%, 88%);
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: hsl(223, 100%, 88%);
+    margin: 8px 10px 8px 0;
+    padding: 12px 100px 12px 20px;
+}
+
+::placeholder{
+    color: hsl(223, 59%, 88%);
+    opacity: 1;
+}
+
+p{
+    font-weight: 300;
+}
+
+span{
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+/* class selectors */
+
+.button{
+    background-color: hsl(223, 87%, 63%);
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 1px 5px hsl(223, 87%, 63%);
+    color: white;
+    margin: 8px 0;
+    padding: 12px 40px;
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.copyright{
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-brands{
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+    margin: 6px;
+    padding: 5px 7px;
+}
+.fa-brands:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.emailError{
+    color: hsl(354, 100%, 66%);
+    height: 12px;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: -230px;
+    width: 155px;
+}
+
+.error{
+    border: 2px solid hsl(354, 100%, 66%);
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+
+.main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ping{
+    width: 5%;
+}
+
+.slackImage{
+    width: 35%;
+}
+
+.spacing{
+    padding: 25px;
+}
+
+@media (max-width:500px) {
+    .ping{
+        width: 18%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .email{
+        margin-bottom: 30px;
+    }
+    .emailError{
+        position: absolute;
+        top: 190px;
+        left: 360px;
+        bottom: 50px;
+    }
+    .slackImage{
+        width: 80%;
+    }
+}
